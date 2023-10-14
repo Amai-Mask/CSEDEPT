@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">JU_CSE_SHORT_CIRCUIT</string>
+    <string name="s1">Officials Info</string>
+    <string name="s2">Gallery</string>
+    <string name="s3">Class Routine</string>
+    <string name="s4">Profile Activity</string>
+    <string name="s5">Share</string>
+    <string name="s6">Feedback!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="teacher1">Dr. Jugal Krishna Das\n B.Sc(Donetsk), MSc.(Donetsk), PhD(Kiev)\nProfessor, Department of Computer Science and Engineering</string>
+    <string name="teacher2">Dr. Mohammad Shorif Uddin\n B.Sc. Engg. (BUET), M.Tech.Ed.(Japan), Ph.D.(Japan)\n Professor, Department of Computer Science and Engineering </string>
+    <string name="teacher3">Dr. Mohammad Zahidur Rahman\n B.Sc(BUET), MSc.(BUET), PhD(Malaysia)\n Professor, Department of Computer Science and Engineering</string>
+    <string name="teacher4">Dr. Md. Imdadul Islam\n B.Sc. Engg. (BUET), MSc. Engg. (BUET), PhD (JU)\n Professor, Department of Computer Science and Engineering </string>
+    <string name="teacher5">Dr. Liton Jude Rozario\n B.Sc(JU), MS(JU), PhD(JU)\n Professor, Department of Computer Science and Engineering</string>
+    <string name="teacher6">Dr. Md. Humayun Kabir\n B.Sc(DU), MSc.(DU), PhD(Ireland)\n Professor, Department of Computer Science and Engineering</string>
+    <string name="teacher7">Dr. Md Abul Kalam Azad\n BSc(JU), MSc(KTH, Sweden), PhD(JU), PhD(UoU, South Korea)\n Professor, Department of Computer Science and Engineering </string>
+    <string name="teacher8">Dr. Abu Sayed Md. Mostafizur Rahaman\n B.Sc(JU), MSc.(Germany) PhD(JU)\n \n Professor, Department of Computer Science and Engineering </string>
+    <string name="teacher9">Dr. Md. Ezharul Islam\nB.SC.(JU), M.ENGG.(JAPAN), PHD(JAPAN)\n  Professor, Department of Computer Science and Engineering</string>
+    <string name="teacher10">Dr. Md. Musfique Anwar\nB.Sc (JU), MSc. (Japan), PhD (Australia)\n Associate Professor, Department of Computer Science and Engineering</string>
+    <string name="teacher11">Anup Majumder\n B.SC.(JU), MS(JU)\n Assistant Professor,Department of Computer Science and Engineering</string>
+    <string name="teacher12">Bulbul Ahammad\n Assistant Professor,Department of Computer Science and Engineering</string>
+    <string name="teacher13">Mohammad Ashraful Islam\n Assistant Professor,Department of Computer Science and Engineering</string>
+
+    <string name="teacher0">CHAIRMAN Dr. Md. Golam Moazzam\n B.Sc(JU), MS(JU), PhD(JU)\n Professor\n Department of Computer Science and Engineering </string>
+
+    <string name="phone1">01712509082 </string>
+    <string name="phone0"> 01922230643</string>
+    <string name="phone2"> 01747615832</string>
+    <string name="phone3"> 01711733480 </string>
+    <string name="phone4"> 01818729702</string>
+    <string name="phone5"> 01551606445 </string>
+    <string name="phone6"> 01671952675</string>
+    <string name="phone7"> 01936857573</string>
+    <string name="phone8"> 01927129603</string>
+    <string name="phone9"> 01816203074</string>
+    <string name="phone10"> 01752311590</string>
+    <string name="phone11"> 01725228874</string>
+    <string name="phone12"> 01791132305</string>
+    <string name="phone13"> 01710548645</string>
+    <string name="officephone"> 02224491045 </string>
+
+    <string name="email1"> cedas@juniv.edu </string>
+    <string name="email0"> khokan@juniv.edu </string>
+    <string name="email2"> shorifuddin@juniv.edu </string>
+    <string name="email3"> rmjahid@juniv.edu </string>
+    <string name="email4"> imdad@juniv.edu </string>
+    <string name="email5"> litonrozario@juniv.edu </string>
+    <string name="email6"> hkabir@juniv.edu </string>
+    <string name="email7"> makazad@juniv.edu </string>
+    <string name="email8"> asmmr@juniv.edu </string>
+    <string name="email9"> ezharul.islam@juniv.edu </string>
+    <string name="email10"> manwar@juniv.edu </string>
+    <string name="email11"> anupmajumder@juniv.edu </string>
+    <string name="email12"> bulbul@juniv.edu</string>
+    <string name="email13"> ashraful.islam@juniv.edu</string>
+    <string name="officeemail">office.cse@juniv.edu </string>
+
+
+
+    <string name="stuff1"> Md. Mukul \n Office Stuff</string>
+    <string name="stuff2"> Md. Hannan \n Office Stuff</string>
+    <string name="stuff3"> Md. Mannan \n Office Stuff</string>
+    <string name="stuff4"> Md. Motiur Rahman \n stuff </string>
+    <string name="stuff5"> Rehana Parvin \n Office Stuff</string>
+
+
+
+
+</resources>

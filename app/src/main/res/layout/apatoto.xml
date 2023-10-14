@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/u10"
+    android:padding="16dp"
+    tools:context=".routine">
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="183dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="CLASS ROUTINES"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif1"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/rtn0" />
+
+    <ImageView
+        android:id="@+id/rtn2"
+        android:layout_width="438dp"
+        android:layout_height="319dp"
+        android:layout_gravity="center"
+        android:src="@drawable/hello" />
+    <Button
+        android:id="@+id/imagertn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FF8A80"
+        android:text="Change Routine"/>
+
+
+</LinearLayout>

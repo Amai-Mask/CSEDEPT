@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".student_activity"
+    android:orientation="vertical"
+    android:background="@drawable/u9"
+
+    android:gravity="center">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_marginBottom="30dp"
+        android:id="@+id/gif2"
+        android:layout_width="178dp"
+        android:layout_height="182dp"
+        android:src="@drawable/g1" />
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_marginBottom="30dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/firstNameTextView"
+        android:textColor="@color/c1"
+        android:fontFamily="fantasy"
+        android:textSize="10dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lastNameTextView"
+        android:textColor="@color/c1"
+        android:fontFamily="fantasy"
+        android:textSize="10dp"
+        android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailTextView"
+        android:textColor="@color/c1"
+        android:fontFamily="fantasy"
+        android:textSize="10dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/phoneNoTextView"
+        android:textColor="@color/c1"
+        android:fontFamily="fantasy"
+        android:textSize="10dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/regNoTextView"
+        android:textColor="@color/c1"
+        android:fontFamily="fantasy"
+        android:textSize="10dp"
+        android:textStyle="bold"/>
+
+</LinearLayout>
+
+
+    <Button
+        android:id="@+id/detailsid"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Users Details" />
+
+    <Button
+        android:id="@+id/logoutid"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:text="Sign Out" />
+
+
+    <Button
+        android:id="@+id/fileid"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:text="File management" />
+
+    <Button
+        android:id="@+id/noticeid"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:text="Notice management" />
+
+</LinearLayout>

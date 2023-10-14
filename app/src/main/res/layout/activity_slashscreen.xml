@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".slashscreen"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/u0">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="JU CSE\nWEBLET"
+        android:ellipsize="marquee"
+        android:textColor="@color/white"
+        android:fontFamily="monospace"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif1"
+        android:layout_width="178dp"
+        android:layout_height="182dp"
+        android:src="@drawable/g0" />
+
+    <ProgressBar
+        android:id="@+id/progressbarid"
+        style="@android:style/Widget.ProgressBar.Inverse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp" />
+
+    <ProgressBar
+        android:id="@+id/progressbarid1"
+        style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp" />
+
+
+</LinearLayout>
