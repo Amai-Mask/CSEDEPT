@@ -7,38 +7,31 @@
     tools:context=".slashscreen"
     android:gravity="center"
     android:orientation="vertical"
-    android:background="@drawable/u0">
+    android:background="@drawable/s3">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="JU CSE\nWEBLET"
-        android:ellipsize="marquee"
-        android:textColor="@color/white"
-        android:fontFamily="monospace"
-        android:textSize="50dp"
-        android:textStyle="bold" />
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif0"
+        android:layout_width="382dp"
+        android:layout_height="252dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/name" />
 
     <pl.droidsonroids.gif.GifImageView
         android:id="@+id/gif1"
-        android:layout_width="178dp"
-        android:layout_height="182dp"
-        android:src="@drawable/g0" />
+        android:layout_width="322dp"
+        android:layout_height="191dp"
+        android:src="@drawable/etai" />
 
-    <ProgressBar
-        android:id="@+id/progressbarid"
-        style="@android:style/Widget.ProgressBar.Inverse"
+    <TextView
+        android:layout_marginTop="120dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="50dp" />
-
-    <ProgressBar
-        android:id="@+id/progressbarid1"
-        style="@android:style/Widget.Holo.ProgressBar.Horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp" />
-
+        android:ellipsize="marquee"
+        android:fontFamily="monospace"
+        android:gravity="right"
+        android:text="Department of \nComputer Science and Engineering \nJahangirnagar University "
+        android:textColor="@color/c2"
+        android:textSize="11dp"
+        android:textStyle="bold" />
 
 </LinearLayout>

@@ -6,16 +6,46 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/u9"
+    android:background="@drawable/u10"
     android:padding="16dp"
     tools:context=".gallery123">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="169dp"
+        android:orientation="horizontal"
+        android:background="@drawable/u9"
+        android:padding="16dp">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gif0"
+            android:layout_width="169dp"
+            android:layout_height="134dp"
+            android:src="@drawable/img01" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gif1"
+            android:layout_width="169dp"
+            android:layout_height="134dp"
+            android:src="@drawable/img03" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/a1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/ach1"
+        />
 
     <Button
         android:id="@+id/imageBT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:layout_gravity="center"
-        android:text="Select Images"/>
+        android:backgroundTint="#FF4081"
+        android:layout_centerHorizontal="true"
+        android:text="Add Images" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"

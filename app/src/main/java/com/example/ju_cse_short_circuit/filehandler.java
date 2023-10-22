@@ -56,7 +56,7 @@ public class filehandler extends AppCompatActivity implements FileAdapter.OnDown
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_filehandler);
 
-        uploadProgressBar = findViewById(R.id.uploadProgressBar);
+//        uploadProgressBar = findViewById(R.id.uploadProgressBar);
         uploadButton = findViewById(R.id.uploadButton);
         recyclerView = findViewById(R.id.recyclerView);
         fileMetadataList = new ArrayList<>();

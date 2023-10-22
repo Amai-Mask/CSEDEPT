@@ -64,11 +64,11 @@ public class student_activity extends AppCompatActivity implements View.OnClickL
                         TextView phoneNoTextView = findViewById(R.id.phoneNoTextView);
                         TextView emailTextView = findViewById(R.id.emailTextView);
 
-                        firstNameTextView.setText(firstName);
-                        lastNameTextView.setText(lastName);
-                        regNoTextView.setText("reg:"+regNo);
-                        phoneNoTextView.setText(phoneNo);
-                        emailTextView.setText(email);
+                        firstNameTextView.setText("Fisrt Name: " + firstName);
+                         lastNameTextView.setText("Last Name: " + lastName);
+                            regNoTextView.setText("Registraion No:"+regNo);
+                          phoneNoTextView.setText("Contact No:"+phoneNo);
+                            emailTextView.setText("Email:"+email);
                     }
                 })
                 .addOnFailureListener(e -> {

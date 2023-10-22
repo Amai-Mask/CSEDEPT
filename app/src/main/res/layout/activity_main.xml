@@ -7,9 +7,16 @@
     tools:context=".MainActivity"
     android:orientation="vertical"
     android:padding="5dp"
-    android:background="@drawable/u8"
+    android:background="@drawable/u16"
     android:gravity="center"
     android:weightSum="3">
+
+    <ImageView
+        android:id="@+id/a2"
+        android:layout_width="360dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/a3" />
     <LinearLayout
         android:layout_weight="1"
         android:layout_width="match_parent"
@@ -37,15 +44,22 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:background="@drawable/u18">
 
 
-                <ImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:background="@drawable/bk1"
-                    android:padding="10dp"
-                    android:src="@drawable/contact" />
+<!--                <ImageView-->
+<!--                    android:layout_width="60dp"-->
+<!--                    android:layout_height="60dp"-->
+<!--                    android:background="@drawable/bk1"-->
+<!--                    android:padding="10dp"-->
+<!--                    android:src="@drawable/contact" />-->
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/gif0"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/mg1" />
 
                 <View
                     android:layout_width="match_parent"
@@ -57,9 +71,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    android:text="@string/s1"
+                    android:text="OFFICIAL INFO"
                     android:textAppearance="?android:textAppearanceLarge"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    />
 
 
             </LinearLayout>
@@ -81,14 +96,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
+                android:background="@drawable/u5"
                 android:orientation="vertical">
-                <ImageView
-                    android:background="@drawable/bk2"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:padding="10dp"
-                    android:src="@drawable/images"
-                    />
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/gif1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/mg2" />
+<!--                <ImageView-->
+<!--                    android:background="@drawable/bk2"-->
+<!--                    android:layout_width="60dp"-->
+<!--                    android:layout_height="60dp"-->
+<!--                    android:padding="10dp"-->
+<!--                    android:src="@drawable/images"-->
+<!--                    />-->
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -98,7 +119,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    android:text="@string/s2"
+                    android:text="ACHIEVEMENT"
                     android:textStyle="bold"
                     android:textAppearance="?android:textAppearanceLarge"
                     />
@@ -138,14 +159,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
+                android:background="@drawable/u17"
                 android:orientation="vertical">
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/gif2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/mg3" />
 
-                <ImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:background="@drawable/bk3"
-                    android:padding="10dp"
-                    android:src="@drawable/routine" />
+
+<!--                <ImageView-->
+<!--                    android:layout_width="60dp"-->
+<!--                    android:layout_height="60dp"-->
+<!--                    android:background="@drawable/bk3"-->
+<!--                    android:padding="10dp"-->
+<!--                    android:src="@drawable/routine" />-->
 
                 <View
                     android:layout_width="match_parent"
@@ -157,7 +185,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    android:text="@string/s3"
+                    android:text="ROUTINE"
                     android:textAppearance="?android:textAppearanceLarge"
                     android:textStyle="bold" />
 
@@ -181,14 +209,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
+                android:background="@drawable/u0"
                 android:orientation="vertical">
-                <ImageView
-                    android:background="@drawable/bk4"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:padding="10dp"
-                    android:src="@drawable/task"
-                    />
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/gif3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/mg4" />
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -198,7 +225,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    android:text="@string/s4"
+                    android:text="STUDENT INFO"
                     android:textStyle="bold"
                     android:textAppearance="?android:textAppearanceLarge"
                     />
@@ -236,14 +263,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
+                android:background="@drawable/u12"
                 android:orientation="vertical">
 
-                <ImageView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:background="@drawable/bk5"
-                    android:padding="10dp"
-                    android:src="@drawable/share" />
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/gif4"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/mg5" />
 
                 <View
                     android:layout_width="match_parent"
@@ -255,7 +282,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    android:text="@string/s5"
+                    android:text="SHARE"
                     android:textAppearance="?android:textAppearanceLarge"
                     android:textStyle="bold" />
 
@@ -279,14 +306,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
+                android:background="@drawable/u19"
                 android:orientation="vertical">
-                <ImageView
-                    android:background="@drawable/bk6"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:padding="10dp"
-                    android:src="@drawable/feedback"
-                    />
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/gif6"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/mg6" />
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -296,7 +322,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    android:text="@string/s6"
+                    android:text="FEEDBACK!"
                     android:textStyle="bold"
                     android:textAppearance="?android:textAppearanceLarge"
                     />

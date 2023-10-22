@@ -19,8 +19,8 @@ public class slashscreen extends AppCompatActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_slashscreen);
-        progressbar=(ProgressBar) findViewById(R.id.progressbarid);
-        progressbar1=(ProgressBar) findViewById(R.id.progressbarid1);
+//        progressbar=(ProgressBar) findViewById(R.id.progressbarid);
+//        progressbar1=(ProgressBar) findViewById(R.id.progressbarid1);
 
         Thread thread = new Thread(new Runnable() {
             @Override
@@ -38,11 +38,11 @@ public class slashscreen extends AppCompatActivity {
 
    public void doWork()
     {
-        for(progress = 10 ;progress<=80;progress=progress+10) {
+        for(progress = 10 ;progress<=60;progress=progress+10) {
         try {
              Thread.sleep(700);
-             progressbar.setProgress(progress);
-             progressbar1.setProgress(progress);
+//             progressbar.setProgress(progress);
+//             progressbar1.setProgress(progress);
 
         } catch (InterruptedException e) {
             e.printStackTrace();

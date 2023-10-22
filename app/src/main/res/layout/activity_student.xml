@@ -6,37 +6,42 @@
     android:layout_height="match_parent"
     tools:context=".student_activity"
     android:orientation="vertical"
-    android:background="@drawable/u9"
-
-    android:gravity="center">
-
-    <pl.droidsonroids.gif.GifImageView
-        android:layout_marginBottom="30dp"
-        android:id="@+id/gif2"
-        android:layout_width="178dp"
-        android:layout_height="182dp"
-        android:src="@drawable/g1" />
-
-    <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@drawable/u21"
     android:gravity="center"
-    android:orientation="vertical"
-    android:layout_marginBottom="30dp"
-    >
+    android:weightSum="3">
+
+    <ImageView
+        android:id="@+id/a0"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@drawable/u7"
+        android:layout_marginBottom="20dp"/>
+
+
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-
+     android:layout_height="wrap_content"
+    android:gravity="left"
+    android:orientation="vertical"
+    android:layout_marginBottom="30dp"
         >
+        <ImageView
+            android:id="@+id/a2"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/a8" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/firstNameTextView"
         android:textColor="@color/c1"
         android:fontFamily="fantasy"
-        android:textSize="10dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="20dp"
         android:textStyle="bold"/>
 
     <TextView
@@ -45,20 +50,20 @@
         android:id="@+id/lastNameTextView"
         android:textColor="@color/c1"
         android:fontFamily="fantasy"
-        android:textSize="10dp"
+        android:layout_marginLeft="15dp"
+
+        android:textSize="20dp"
         android:textStyle="bold"/>
-
-    </LinearLayout>
-
-
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/emailTextView"
         android:textColor="@color/c1"
+        android:layout_marginLeft="15dp"
+
         android:fontFamily="fantasy"
-        android:textSize="10dp"
+        android:textSize="20dp"
         android:textStyle="bold"/>
     <TextView
         android:layout_width="wrap_content"
@@ -66,16 +71,20 @@
         android:id="@+id/phoneNoTextView"
         android:textColor="@color/c1"
         android:fontFamily="fantasy"
-        android:textSize="10dp"
+        android:layout_marginLeft="15dp"
+
+        android:textSize="20dp"
         android:textStyle="bold"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/regNoTextView"
+        android:layout_marginLeft="15dp"
+
         android:textColor="@color/c1"
         android:fontFamily="fantasy"
-        android:textSize="10dp"
+        android:textSize="20dp"
         android:textStyle="bold"/>
 
 </LinearLayout>
@@ -83,27 +92,43 @@
 
     <Button
         android:id="@+id/detailsid"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:text="Users Details" />
-
-    <Button
-        android:id="@+id/logoutid"
-        android:layout_width="137dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sign Out" />
-
+        android:layout_marginTop="1dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#2979FF"
+        android:layout_centerHorizontal="true"
+        android:text="ALL USERS DETAILS" />
 
     <Button
         android:id="@+id/fileid"
-        android:layout_width="137dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="File management" />
+        android:layout_marginTop="1dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#00B0FF"
+        android:layout_centerHorizontal="true"
+        android:text="FILE MANAGEMENT" />
 
     <Button
         android:id="@+id/noticeid"
-        android:layout_width="137dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Notice management" />
+        android:layout_marginTop="1dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#651FFF"
+        android:layout_centerHorizontal="true"
+        android:text="GROUP CHAT" />
+
+    <Button
+        android:id="@+id/logoutid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#3D5AFE"
+        android:layout_centerHorizontal="true"
+        android:text="LOG OUT" />
+
 
 </LinearLayout>
