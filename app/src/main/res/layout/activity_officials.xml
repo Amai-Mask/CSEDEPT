@@ -31,9 +31,9 @@
 
             <pl.droidsonroids.gif.GifImageView
                 android:id="@+id/gif1"
-                android:layout_width="338dp"
-                android:layout_height="186dp"
-                android:src="@drawable/img07" />
+                android:layout_width="374dp"
+                android:layout_height="220dp"
+                android:src="@drawable/img23" />
 
 
             <View
@@ -76,9 +76,9 @@
 
             <pl.droidsonroids.gif.GifImageView
                 android:id="@+id/gif2"
-                android:layout_width="323dp"
-                android:layout_height="197dp"
-                android:src="@drawable/img08" />
+                android:layout_width="342dp"
+                android:layout_height="170dp"
+                android:src="@drawable/img24" />
 
             <View
                 android:layout_width="match_parent"

@@ -113,7 +113,7 @@ public class stuff1 extends Fragment {
         if(mParam2 == 0)
         {
 
-            imageview.setImageResource(R.drawable.contact);
+            imageview.setImageResource(R.drawable.staffus);
             textview.setText(R.string.stuff1);
 
            // btn1.setText(R.string.phone1);
@@ -125,7 +125,7 @@ public class stuff1 extends Fragment {
         else if(mParam2 == 1)
         {
 
-            imageview.setImageResource(R.drawable.contact);
+            imageview.setImageResource(R.drawable.staffus);
             textview.setText(R.string.stuff2);
 
 
@@ -135,7 +135,7 @@ public class stuff1 extends Fragment {
         else if(mParam2 ==2)
         {
 
-            imageview.setImageResource(R.drawable.contact);
+            imageview.setImageResource(R.drawable.staffus);
             textview.setText(R.string.stuff3);
 
 
@@ -145,15 +145,15 @@ public class stuff1 extends Fragment {
         else if(mParam2 ==3)
         {
 
-            imageview.setImageResource(R.drawable.contact);
+            imageview.setImageResource(R.drawable.staffus);
             textview.setText(R.string.stuff4);
 
 
         }
         else {
 
-            imageview.setImageResource(R.drawable.contact);
-            textview.setText("stuff5");
+            imageview.setImageResource(R.drawable.staffus);
+            textview.setText(R.string.stuff5);
 
 
 

@@ -1,9 +1,9 @@
 <!-- res/layout/activity_sign_in.xml -->
 
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="@drawable/u22"
     android:padding="16dp">
@@ -63,16 +63,38 @@
         android:inputType="text"
         android:padding="15dp" />
 
-
-    <EditText
-        android:id="@+id/userid11"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/registerEmailBatchId"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:drawableStart="@drawable/rmail"
-        android:textSize="20sp"
-        android:hint=" User Email"
-        android:inputType="textEmailAddress"
-        android:padding="15dp" />
+        android:layout_below="@id/phone_id"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="4dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/ic_email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userid11"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+<!--    <EditText-->
+<!--        android:id="@+id/userid11"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:drawableStart="@drawable/rmail"-->
+<!--        android:textSize="20sp"-->
+<!--        android:hint=" User Email"-->
+<!--        android:inputType="textEmailAddress"-->
+<!--        android:padding="15dp" />-->
 
     <EditText
         android:id="@+id/passwordid11"

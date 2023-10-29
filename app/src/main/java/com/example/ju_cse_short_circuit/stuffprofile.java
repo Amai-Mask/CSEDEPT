@@ -21,7 +21,7 @@ public class stuffprofile extends AppCompatActivity implements AdapterView.OnIte
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_teacherprofile);
+        setContentView(R.layout.activity_stuffprofile);
         String[] name = {"Md. Mukul", "Md Hannan", "Md Mannan", "Md Motiur Rahman", "Rehana Parvin"};
 
         lv = (ListView) findViewById(R.id.lv1);

@@ -14,10 +14,9 @@
     <ImageView
         android:id="@+id/a0"
         android:layout_width="match_parent"
-        android:layout_height="220dp"
+        android:layout_height="210dp"
         android:background="@drawable/u7"
-        android:layout_marginBottom="20dp"/>
-
+        android:layout_marginBottom="15dp"/>
 
 
     <LinearLayout
@@ -25,7 +24,7 @@
      android:layout_height="wrap_content"
     android:gravity="left"
     android:orientation="vertical"
-    android:layout_marginBottom="30dp"
+    android:layout_marginBottom="15dp"
         >
         <ImageView
             android:id="@+id/a2"

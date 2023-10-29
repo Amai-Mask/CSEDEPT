@@ -1,10 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/u8"
-    tools:context=".stuffprofile">
+    android:layout_gravity="center"
+    android:background="@drawable/u15"
+    tools:context=".stuffprofile"
+    android:weightSum="4"
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/a2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/kmn5" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="169dp"
+        android:orientation="horizontal"
+        >
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gif0"
+            android:layout_width="205dp"
+            android:layout_height="170dp"
+            android:src="@drawable/img21" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gif1"
+            android:layout_width="205dp"
+            android:layout_height="170dp"
+            android:src="@drawable/img22" />
+        =
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/u15"
+        android:weightSum="4"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.7">
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:listSelector="#ff22"
+                android:id="@+id/lv1"
+                android:background="@drawable/u5"
+                >
+
+            </ListView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.3">
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent">
+            <FrameLayout
+                android:id="@+id/fid1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+            </ScrollView>
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
