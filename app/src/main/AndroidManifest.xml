@@ -34,6 +34,9 @@
             android:name=".filehandler"
             android:exported="false" />
         <activity
+            android:name=".examroutine"
+            android:exported="false" />
+        <activity
             android:name=".gallery123"
             android:exported="false" />
         <activity

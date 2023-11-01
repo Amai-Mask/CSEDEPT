@@ -8,60 +8,141 @@
     android:background="@drawable/u22"
     android:padding="16dp">
 
+<!--    <ImageView-->
+<!--        android:id="@+id/a2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:background="@drawable/a7" />-->
+    <TextView
+        android:id="@+id/welcomeId"
+        android:layout_width="383dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gif0"
+        android:layout_marginTop="-10dp"
+        android:fontFamily="@font/bungee"
+        android:text="Create a New Account"
+        android:textColor="@color/c8"
+        android:textSize="30sp" />
     <pl.droidsonroids.gif.GifImageView
         android:id="@+id/gif1"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="-30dp"
         android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="167dp"
         android:src="@drawable/img11" />
 
-    <ImageView
-        android:id="@+id/a2"
+
+
+    <TextView
+        android:id="@+id/titleId"
         android:layout_width="wrap_content"
-        android:layout_height="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcomeId"
+        android:layout_marginTop="-20dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/antic"
+        android:textColor="@color/c1"
         android:layout_gravity="center"
-        android:background="@drawable/a7" />
+        android:text="Sign Up to Start a New Journey"
+        android:textSize="20sp" />
 
-    <EditText
-        android:id="@+id/firstnameid"
-        android:layout_marginTop="20dp"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/registerNameBatchId1"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:drawableStart="@drawable/rfn"
-        android:textSize="20sp"
-        android:hint=" First Name"
-        android:inputType="text"
-        android:padding="15dp" />
+        android:layout_below="@id/a2"
+        android:layout_marginBottom="3dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/ic_person">
 
-    <EditText
-        android:id="@+id/lastnameid"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/firstnameid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="First Name"
+            android:inputType="textPersonName"
+            android:textColor="@color/black" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/registerNameBatchId2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:drawableStart="@drawable/rln"
-        android:textSize="20sp"
-        android:hint=" Last Name"
-        android:inputType="text"
-        android:padding="15dp" />
+        android:layout_below="@id/registerNameBatchId1"
+        android:layout_marginBottom="3dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/ic_person">
 
-    <EditText
-        android:id="@+id/reg_id"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/lastnameid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Last Name"
+            android:inputType="textPersonName"
+            android:textColor="@color/black" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/registerNameBatchId3"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:drawableStart="@drawable/rreg"
-        android:textSize="20sp"
-        android:hint=" Registration No."
-        android:inputType="text"
-        android:padding="15dp" />
+        android:layout_below="@id/registerNameBatchId2"
+        android:layout_marginBottom="3dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/ic_std_id">
 
-    <EditText
-        android:id="@+id/phone_id"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/reg_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Registration No."
+            android:inputType="textPersonName"
+            android:textColor="@color/black" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/registerPhoneBatchId"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:drawableStart="@drawable/rcal"
-        android:textSize="20sp"
-        android:hint=" Phone No."
-        android:inputType="text"
-        android:padding="15dp" />
+        android:layout_below="@id/registerNameBatchId3"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        app:counterEnabled="true"
+        app:counterMaxLength="11"
+        app:endIconMode="clear_text"
+        app:prefixText="+88"
+        app:startIconDrawable="@drawable/ic_phone">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phone_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Phone_number"
+            android:inputType="phone"
+            android:textColor="@color/black" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/registerEmailBatchId"
@@ -69,8 +150,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/phone_id"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="4dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
         android:textAlignment="textStart"
         android:textColor="@color/black"
         app:endIconMode="clear_text"
@@ -80,40 +161,37 @@
             android:id="@+id/userid11"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="email"
+            android:hint="Email"
             android:inputType="textEmailAddress"
             android:textColor="@color/black" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
-<!--    <EditText-->
-<!--        android:id="@+id/userid11"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:drawableStart="@drawable/rmail"-->
-<!--        android:textSize="20sp"-->
-<!--        android:hint=" User Email"-->
-<!--        android:inputType="textEmailAddress"-->
-<!--        android:padding="15dp" />-->
-
-    <EditText
-        android:id="@+id/passwordid11"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/registerPassBatchId"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:drawableStart="@drawable/rpass"
-        android:textSize="20sp"
-        android:hint=" Password"
-        android:inputType="textPassword"
-        android:padding="15dp"
-        android:layout_marginBottom="20dp"
-        />
+        android:layout_below="@id/registerEmailBatchId"
+        android:layout_marginBottom="3dp"
+        app:passwordToggleEnabled="true"
+        app:startIconDrawable="@drawable/ic_password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordid11"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
 
 
     <Button
         android:id="@+id/signupid11"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="1dp"
+        android:layout_marginTop="5dp"
         android:layout_gravity="center"
         android:backgroundTint="#3D5AFE"
         android:layout_centerHorizontal="true"

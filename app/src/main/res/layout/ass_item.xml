@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="8dp"
+    android:backgroundTint="#B9F6CA"
+    android:layout_margin="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="212dp"
+        android:layout_marginVertical="6dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/border"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginTop="-13dp"
+            android:layout_marginBottom="-15dp"
+            android:orientation="horizontal">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/gif0"
+                android:layout_width="169dp"
+                android:layout_height="103dp"
+                android:layout_marginStart="-65dp"
+                android:src="@drawable/bar" />
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/gif1"
+                android:layout_width="169dp"
+                android:layout_height="103dp"
+                android:layout_marginStart="-105dp"
+                android:src="@drawable/bar" />
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/gif2"
+                android:layout_width="169dp"
+                android:layout_height="103dp"
+                android:layout_marginStart="-105dp"
+                android:src="@drawable/bar" />
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/gif3"
+                android:layout_width="169dp"
+                android:layout_height="103dp"
+                android:layout_marginStart="-105dp"
+                android:src="@drawable/bar" />
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/gif4"
+                android:layout_width="169dp"
+                android:layout_height="103dp"
+                android:layout_marginStart="-105dp"
+                android:src="@drawable/bar" />
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/gif5"
+                android:layout_width="169dp"
+                android:layout_height="103dp"
+                android:layout_marginStart="-105dp"
+                android:src="@drawable/bar" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/indexTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="5dp"
+
+            android:text="Serial No : "
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/detailsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Course Name : "
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/categoryTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="5dp"
+
+            android:text="Details : "
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/uploaderEmailTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Due Date :"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

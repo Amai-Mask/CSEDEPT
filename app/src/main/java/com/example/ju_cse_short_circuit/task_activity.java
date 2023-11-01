@@ -44,7 +44,6 @@ public class task_activity extends AppCompatActivity implements View.OnClickList
     }
 
 
-
     public void onClick(View view) {
         if(view.getId()==R.id.signinid)
         {

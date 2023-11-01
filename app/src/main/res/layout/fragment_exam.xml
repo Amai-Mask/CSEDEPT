@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="11dp"
+    android:background="@drawable/u32"
+    android:orientation="vertical"
+    tools:context=".ExamFragment">
+
+    <ImageView
+        android:id="@+id/a2"
+        android:layout_width="match_parent"
+        android:layout_height="137dp"
+        android:layout_marginLeft="1dp"
+        android:background="@drawable/noxm" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:layout_marginTop="122dp"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gif0"
+            android:layout_width="169dp"
+            android:layout_height="134dp"
+            android:src="@drawable/e12" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gif1"
+            android:layout_width="169dp"
+            android:layout_height="134dp"
+            android:src="@drawable/e11" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/welcomeId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gif0"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="282dp"
+        android:fontFamily="@font/bungee"
+        android:text="List OF Exams"
+        android:textColor="@color/c2"
+        android:textSize="25sp" />
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/noticeRecyclerView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="345dp"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+</FrameLayout>

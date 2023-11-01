@@ -1,45 +1,118 @@
 package com.example.ju_cse_short_circuit;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.TextView;
+import android.widget.EditText;
 import android.widget.Toast;
 
-import com.bumptech.glide.Glide;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.firebase.storage.FirebaseStorage;
-import com.google.firebase.storage.StorageReference;
-import com.google.firebase.storage.UploadTask;
+import com.google.firebase.auth.FirebaseAuth;
+
+import com.google.firebase.messaging.FirebaseMessaging;
+
+// Get the user's ID (replace with your user identification logic)
 
 
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.firebase.storage.ListResult;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.UUID;
-public class routine extends AppCompatActivity {
+// Subscribe the user to a topic using their ID
+
+public class routine extends AppCompatActivity implements View.OnClickListener{
+    private Button btnsi,btnsu,btnfp;
+    private EditText email,password;
+    private FirebaseAuth firebaseAuth;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.apatoto); // The corresponding XML layout file is activity_routine.xml
+        setContentView(R.layout.apatoto);
 
-        // Find views by their IDs
-        ImageView imageView = findViewById(R.id.rtn2);
-        Button button = findViewById(R.id.imagertn);
+        firebaseAuth = FirebaseAuth.getInstance();
+
+        btnsi=(Button) findViewById(R.id.signinid);
+        btnfp=(Button) findViewById(R.id.forgetpasswordid);
+
+        email=(EditText) findViewById(R.id.userid);
+        password=(EditText) findViewById(R.id.passwordid);
+
+        btnsi.setOnClickListener(this);
+        btnfp.setOnClickListener(this);
 
     }
+
+
+
+    public void onClick(View view) {
+        if(view.getId()==R.id.signinid)
+        {
+
+            login();
+
+
+
+        }
+        else if(view.getId()==R.id.forgetpasswordid) {
+
+
+            Intent intent = new Intent(routine.this, resetpassword.class);
+            startActivity(intent);
+
+        }
+
+    }
+
+    private void login()
+    {
+
+        String userEmail = email.getText().toString();
+        String userPassword = password.getText().toString();
+        if(userEmail.isEmpty())
+        {
+            email.setError("Enter an email address");
+            email.requestFocus();
+            return;
+
+        }
+
+        if(!android.util.Patterns.EMAIL_ADDRESS.matcher(userEmail).matches())
+        {
+            email.setError("Enter a valid email address");
+            email.requestFocus();
+            return;
+        }
+
+        if(userPassword.length()<8)
+        {
+
+            password.setError("Password is at least of 8 characters ");
+            password.requestFocus();
+            return;
+
+        }
+
+        firebaseAuth.signInWithEmailAndPassword(userEmail,userPassword)
+                .addOnCompleteListener(this, task -> {
+                    if (task.isSuccessful()) {
+                        // Sign-in successful
+
+
+                        // Implement a method to hash the email
+
+
+
+
+                        Intent intent = new Intent(routine.this, examroutine.class);
+                        startActivity(intent);
+                        Toast.makeText(this, "Sign-in successful!", Toast.LENGTH_SHORT).show();
+
+
+                    } else {
+                        // Sign-in failed
+                        email.setError( "Invalid email or password.");
+                    }
+                });
+    }
+
+
 }

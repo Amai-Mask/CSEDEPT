@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "151255224015",
+    "firebase_url": "https://havocpain-default-rtdb.firebaseio.com",
     "project_id": "havocpain",
     "storage_bucket": "havocpain.appspot.com"
   },

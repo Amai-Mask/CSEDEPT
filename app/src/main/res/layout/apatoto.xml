@@ -1,47 +1,113 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<!-- res/layout/activity_sign_in.xml -->
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:background="@drawable/u10"
-    android:padding="16dp"
     tools:context=".routine">
 
-    <TextView
-        android:id="@+id/t1"
-        android:layout_width="183dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="CLASS ROUTINES"
-        android:textAppearance="?android:textAppearanceLarge"
-        android:textStyle="bold" />
 
-    <pl.droidsonroids.gif.GifImageView
-        android:id="@+id/gif1"
-        android:layout_width="220dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:src="@drawable/rtn0" />
 
-    <ImageView
-        android:id="@+id/rtn2"
-        android:layout_width="438dp"
-        android:layout_height="319dp"
-        android:layout_gravity="center"
-        android:src="@drawable/hello" />
-    <Button
-        android:id="@+id/imagertn"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="#FF8A80"
-        android:text="Change Routine"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/u24"
+        android:padding="16dp">
 
 
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gif0"
+            android:layout_width="348dp"
+            android:layout_height="217dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-30dp"
+            android:layout_marginBottom="-20dp"
+            android:src="@drawable/kmn4" />
+
+        <TextView
+            android:id="@+id/welcomeId"
+            android:layout_width="383dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gif0"
+            android:layout_marginTop="-20dp"
+            android:fontFamily="@font/bungee"
+            android:text="Hello There\nWelcome Back"
+            android:textColor="@color/c5"
+            android:textSize="35sp" />
+        <TextView
+            android:id="@+id/titleId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/welcomeId"
+            android:layout_marginTop="-10dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/antic"
+            android:textColor="@color/c9"
+            android:text="Sign in to Continue"
+            android:textSize="20sp" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/loginEmailBatchId"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleId"
+            android:layout_marginBottom="8dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/ic_email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/userid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/loginPassBatchId"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loginEmailBatchId"
+            android:layout_marginBottom="35dp"
+            app:passwordToggleEnabled="true"
+            app:startIconDrawable="@drawable/ic_password">
+
+            <EditText
+                android:id="@+id/passwordid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Enter Password"
+                android:inputType="textPassword"
+                android:textColor="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/signinid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LOG IN"
+            android:backgroundTint="#D500F9"
+            />
+
+        <Button
+            android:id="@+id/forgetpasswordid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FORGET PASSWORD"
+            android:backgroundTint="#4A148C"
+            />
+
+    </LinearLayout>
 </LinearLayout>
